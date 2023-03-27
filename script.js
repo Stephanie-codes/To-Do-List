@@ -1,4 +1,12 @@
-const form = document.getElementById('form');
-const newToDo = document.getElementById('new');
+
+const newTask = document.getElementById('newtask');
 const listToDo = document.getElementById('list');
+
+let list;
+
+  document.getElementById('add').onclick = function() {
+    list = newTask.value;
+    listToDo.innerHTML += list;
+  }
+
 

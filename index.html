@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
   </head>
   <body>
     <div class="container">
@@ -17,22 +13,26 @@
         <div class="header">
           <h2>To Do List</h2>
         </div>
+      </header>
+      <main>
         <div class="new-todo">
           <form id="form">
-            <input type="text" name="new" id="new" placeholder="Type task here..." />
-            <button type="submit">
-              <i data-feather="plus-circle"></i>
+            <input type="text" name="new" id="newtask" placeholder="Type task here..." />
+            <button type="button" id="add">
+              <img src="images/plus-circle.svg" alt="plus-circle" id="plus-circle">
             </button>
           </form>
         </div>
-      </header>
-      <div id="list">
-      </div>
+        <div class="list-container" id="listcontainer">
+          <ul id="list"></ul>
+        </div>
+      </main>
     </div>
+    <footer>
+      <div class="footer1">
+          Copyright © 2023 Stephanie Burlinchon - All Right Reserved. 
+      </div>
+  </footer>
     <script src="./script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script>
-      feather.replace();
-    </script>
   </body>
 </html>
